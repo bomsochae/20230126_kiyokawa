@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社TECH</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/service.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">
+      <a href="index.html">TECH</a>
+    </h1>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item"><a href="index.html">ホーム</a></li>
+        <li class="header-nav-item"><a href="service.html">事業内容</a></li>
+        <li class="header-nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="header-nav-item"><a href="company.html">会社概要</a></li>
+      </ul>
+    </nav>
+    <div class="menu" id="menu">
+      <span class="menu-line-top"></span>
+      <span class="menu-line-middle"></span>
+      <span class="menu-line-bottom"></span>
+    </div>
+    <nav class="drawer-nav" id="drawer-nav">
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item"><a href="index.html">ホーム</a></li>
+        <li class="drawer-nav-item"><a href="service.html">事業内容</a></li>
+        <li class="drawer-nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="drawer-nav-item"><a href="company.html">会社概要</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="page-mv">
+    <h1 class="title">事業内容</h1>
+  </div>
+  <main>
+    <div class="service ptb-m wrap">
+      <div class="service-list">
+        <section class="service-item">
+          <div class="service-item-img">
+            <img src="img/service1.png" alt="IT人材育成事業">
+          </div>
+          <div class="service-item-detail">
+            <h2 class="service-item-title">IT人材育成事業</h2>
+            <p class="service-item-depication">これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。</p>
+          </div>
+        </section>
+        <section class="service-item">
+          <div class="service-item-img">
+            <img src="img/service1.png" alt="コーチング事業">
+          </div>
+          <div class="service-item-detail">
+            <h2 class="service-item-title">コーチング事業</h2>
+            <p class="service-item-depication">目標達成を最短で実現するために、プロのコーチによるマンツーマンのサポートを実施します。</p>
+          </div>
+        </section>
+        <section class="service-item">
+          <div class="service-item-img">
+            <img src="img/service1.png" alt="ITコンサル事業">
+          </div>
+          <div class="service-item-detail">
+            <h2 class="service-item-title">ITコンサル事業</h2>
+            <p class="service-item-depication">経営戦略にIT戦略を策定し、システム開発の提案やシステムの最適化を通じて、企業の経営をサポートします。</p>
+          </div>
+        </section>
+        <section class="service-item">
+          <div class="service-item-img">
+            <img src="img/service1.png" alt="デジタルトランスフォーメーション事業">
+          </div>
+          <div class="service-item-detail">
+            <h2 class="service-item-title">デジタルトランスフォーメーション事業</h2>
+            <p class="service-item-depication">人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <section class="bottom-contact ptb-m">
+    <div class="wrap">
+      <h2 class="bottom-contact-title title">お問い合わせ</h2>
+      <p class="bottom-contact-text">
+        お仕事のご依頼や採用に関してはお問い合わせにて承っております。
+      </p>
+      <input type="button" id="openButton" value="お問い合わせ" class="openButton bottom-contact-button button button-primary">
+    </div>
+  </section>
+  <div class="modal" id="modal">
+    <div class="model-content">
+      <div class="modal-content-inner">
+        <div class="modal-closeButton">
+          <input type="button" id="closeButton" value="×" class="closeButton">
+        </div>
+        <h2 class="top-contact-title title">お問い合わせ</h2>
+        <div class="contact ptb-m">
+          <form action="index.html" class="contact-form" method="post">
+            <div class="contact-form-item">
+              <label for="company" class="contact-form-item-name">会社名</label>
+              <input type="text" id="company" class="contact-form-item-input">
+            </div>
+            <div class="contact-form-item">
+              <label for="name" class="contact-form-item-name">お名前<span
+                  class="contact-form-item-required">*</span></label>
+              <input type="text" id="name" class="contact-form-item-input" required>
+            </div>
+            <div class="contact-form-item">
+              <label for="email" class="contact-form-item-name">メールアドレス<span
+                  class="contact-form-item-required">*</span></label>
+              <input type="email" id="email" class="contact-form-item-input" required>
+            </div>
+            <div class="contact-form-item">
+              <label for="comment" class="contact-form-item-name">お問い合わせ内容<span
+                  class="contact-form-item-required">*</span></label>
+              <textarea id="comment" cols="80" rows="8" class="contact-form-item-textarea" required></textarea>
+            </div>
+            <input type="submit" value="お申し込み" class="contact-form-submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-top" id="button">↑</button>
+  <footer class="footer">
+    <div class="footer-inner wrap">
+      <small class="footer-copyright">&copy; 2020 TECH inc.</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item"><a href="index.html">ホーム</a></li>
+          <li class="footer-nav-item"><a href="service.html">事業内容</a></li>
+          <li class="footer-nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="footer-nav-item"><a href="company.html">会社概要</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
